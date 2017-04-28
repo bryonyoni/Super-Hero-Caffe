@@ -1,0 +1,11 @@
+<h2>Heroes</h2>
+
+#if($heroes)
+<ul>
+  #foreach($hero in $heroes)
+  <li><a href="/hero/$hero.getHeroId()">$hero.getName()</a></li>
+  #end
+</ul>
+#else
+<p>no heroes here</p>
+#end

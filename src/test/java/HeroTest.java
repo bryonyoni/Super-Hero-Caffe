@@ -15,7 +15,7 @@ public class HeroTest {
   }
 
   @Test
-  public void Hero_instantiatesWithDescription_String(){
+  public void getName_instantiatesWithDescription_String(){
     Hero myHero = new Hero("spiderman");
     assertEquals("spiderman",myHero.getName());
   }
@@ -36,7 +36,9 @@ public class HeroTest {
 
   @Test
   public void find_returnsHeroWithTheStatedId_secondHero(){
-    
+    Hero firstHero = new Hero("spiderman");
+    Hero secondHero = new Hero("superman");
+    assertEquals(Hero.find(secondHero.getHeroId()),secondHero);
   }
 
 }

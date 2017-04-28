@@ -25,7 +25,11 @@ public class Hero{
   }
 
   public int getHeroId() {
-  return mHeroId;
-}
+   return mHeroId;
+  }
+
+  public static Hero find(int id){
+    return instances.get(id-1);
+  }
 
 }
