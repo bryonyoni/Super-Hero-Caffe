@@ -1,1 +1,1 @@
-web: ./build/install/todo/bin/todo
+web: ./build/install/Super-Hero-Caffe/bin/Super-Hero-Caffe
