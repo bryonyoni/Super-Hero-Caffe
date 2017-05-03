@@ -1,0 +1,8 @@
+<h1>All Leagues</h1>
+<ul>
+  #foreach($league in $leagues)
+  <li><a href="/leagues/$league.getId()">$league.getName()</a></li>
+  #end
+</ul>
+
+<a href="/leagues/new">Add a new league</a>

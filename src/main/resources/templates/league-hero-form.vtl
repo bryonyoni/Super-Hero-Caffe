@@ -1,0 +1,12 @@
+<h1>Add a task to $league.getName()</h1>
+
+<form action="/hero" method="post">
+  <input id="leagueId" name="leagueId" type="hidden" value="$league.getId()">
+
+  <div class="form-group">
+    <label for="name">name</label>
+    <input id="name" name="name" type="text" class="form-control">
+  </div>
+
+  <button type="submit" class="btn btn-success">Add League</button>
+</form>

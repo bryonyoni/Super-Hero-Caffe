@@ -1,0 +1,15 @@
+<h1>$league.getName()</h1>
+<ul>
+  #foreach($hero in $heroes)
+   <li>$hero.getName()</li>
+  #end
+</ul>
+
+<hr>
+
+
+<a href="/leagues">Back</a>
+<br>
+<a href="/">Home</a>
+<br>
+<a href="/leagues/$league.getId()/hero/new">Add a new hero</a>
