@@ -10,9 +10,9 @@ public class League{
 
   public League(String name){
     mName = name;
-    instances.add(this);
     mId = instances.size();
     mHeroes = new ArrayList<Hero>();
+    instances.add(this);
   }
 
   public String getName() {
@@ -32,7 +32,7 @@ public class League{
   }
 
   public static League find(int id) {
-    return instances.get(id - 1);
+    return instances.get(id);
   }
 
   public List<Hero> getHeroes() {

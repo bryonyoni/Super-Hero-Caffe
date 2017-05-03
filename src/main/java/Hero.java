@@ -3,13 +3,13 @@ import java.util.List;
 
 public class Hero{
   private String mName;
-  private static List<Hero> instances = new ArrayList<Hero>();
   private int mHeroId;
+  private static List<Hero> instances = new ArrayList<Hero>();
 
   public Hero(String name){
     mName = name;
-    instances.add(this);
     mHeroId = instances.size();
+    instances.add(this);
   }
 
   public String getName(){
