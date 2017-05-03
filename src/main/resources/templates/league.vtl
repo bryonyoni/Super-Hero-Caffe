@@ -1,7 +1,10 @@
 <h1>$league.getName()</h1>
 <ul>
   #foreach($hero in $heroes)
-   <li>$hero.getName()</li>
+   <p>Name:<strong>$hero.getName()</strong></p>
+   <p>power:<strong>$hero.getPower()</strong></p>
+   <p>residence:<strong>$hero.getResidence()</strong></p>
+   <img src=$hero.getImage() alt="hero"  width=20% height=20% >
   #end
 </ul>
 

@@ -35,7 +35,10 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       League league = League.find(Integer.parseInt(request.queryParams("leagueId")));
       String name = request.queryParams("name");
-      Hero newHero = new Hero(name);
+      String image = request.queryParams("image");
+      String power = request.queryParams("power");
+      String residence = request.queryParams("residence");
+      Hero newHero = new Hero(name,residence,power,image);
       league.addHero(newHero);
       // request.session().attribute("name",newHero);
       model.put("league",league);
