@@ -9,9 +9,18 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-static-top ">
-      <div class="container">
-        <a href="/"><button id="navbutton"type="button" name="button" class="btn btn-danger">Home</button></a>
+      <div class="form-group">
+        <div class="container">
+          <div class="col-md-4">
+            <p id="header">Super Hero Caffe</p>
+          </div>
+        <div class="col-md-4">
+          <a href="/"><button id="navbutton"type="button" name="button" class="btn btn-danger">Home</button></a>
+          <a href="/leagues"><button id="leaugesbutton" type="button" name="button" class="btn btn-success">leagues</button></a>
+        </div>
+        </div>
       </div>
+
     </nav>
       <div class="container">
         #parse( $template )

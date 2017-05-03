@@ -8,12 +8,20 @@
   font-size: 500%;
 }
 
-p{
+#welcomenote{
   font-family: 'Coming Soon', cursive;
   font-size: 200%;
   margin-top: 1%;
 }
 
 #leaugesbutton{
-  margin-left: 50%;
+  /*margin-bottom: 5%;*/
+  /*margin-left: 47%;*/
+  margin-top: 1%;
+}
+
+#header{
+  font-family: 'Coming Soon', cursive;
+  font-size: 200%;
+  margin-top: 1%;
 }
