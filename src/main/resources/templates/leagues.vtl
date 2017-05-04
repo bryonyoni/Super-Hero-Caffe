@@ -1,13 +1,21 @@
-<h1>All Leagues</h1>
+
+
+<!-- <img src="https://www.walldevil.com/wallpapers/w04/169129-batman-black-canary-black-lightning-characters-comics-dc-comics-green-lantern-hawkgirl-justice-league-of-america-red-arrow-red-tornado-superheroes-superman-vixen-comics-wonder-woman.jpg" alt="league_photo" width="100%" height="40%"> -->
+
+<div id="create">
+  <p id="create-title">create your own league</p>
+  <a href="/leagues/new"><button type="button" name="button" class="btn btn-success">new league</button></a>
+</div>
+
 <ul>
+
+  <h1 id="create-title">Or Join A League</h1>
+  <br>
   #foreach($league in $leagues)
-  <li><a href="/leagues/$league.getId()">$league.getName()</a></li>
+  <div class="gallery">
+    <a href="/leagues/$league.getId()"> <img src="https://images.alphacoders.com/241/thumb-1920-241901.jpg" alt="Trolltunga Norway" width="300" height="200">
+      <div class="desc">$league.getName()</div>
+    </a>
+  </div>
   #end
 </ul>
-
-<img src="https://www.walldevil.com/wallpapers/w04/169129-batman-black-canary-black-lightning-characters-comics-dc-comics-green-lantern-hawkgirl-justice-league-of-america-red-arrow-red-tornado-superheroes-superman-vixen-comics-wonder-woman.jpg" alt="league_photo" width="100%" height="40%">
-
-<h4>create your own league</h4>
-
-
-<a href="/leagues/new"><button type="button" name="button" class="btn btn-success">new league</button></a>

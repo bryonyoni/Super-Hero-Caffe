@@ -1,10 +1,12 @@
 <h1>$league.getName()</h1>
 <ul>
   #foreach($hero in $heroes)
-   <p>Name:<strong>$hero.getName()</strong></p>
-   <p>power:<strong>$hero.getPower()</strong></p>
-   <p>residence:<strong>$hero.getResidence()</strong></p>
-   <img src=$hero.getImage() alt="hero"  width=20% height=20% >
+  <br>
+    <p>Name:<strong>$hero.getName()</strong></p>
+    <p>power:<strong>$hero.getPower()</strong></p>
+    <p>residence:<strong>$hero.getResidence()</strong></p>
+    <img src=$hero.getImage() alt="hero"  width=20% height=20% >
+
   #end
 </ul>
 
@@ -12,5 +14,5 @@
 
 
 <a href="/leagues"><button type="button" name="button" class="btn btn-success">Back</button></a>
-<a href="/leagues/$league.getId()/hero/new"><button type="button" name="button" class="btn btn-success">New Hero</button></a>
+<a href="/leagues/$league.getId()/hero/new"><button type="button" name="button" class="btn btn-success">Add your Hero</button></a>
 <br>
